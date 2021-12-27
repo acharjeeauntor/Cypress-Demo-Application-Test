@@ -4,9 +4,9 @@
 describe('Fixtures Test', () => {
 
 
-    // beforeEach(()=>{
-    //  cy.fixture('example').as('data')
-    // })
+    beforeEach(()=>{
+     cy.fixture('example').as('data')
+    })
 
     // beforeEach(()=>{
     //  cy.fixture('loginData/login.json').as('data')

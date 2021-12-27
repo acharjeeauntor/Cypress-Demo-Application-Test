@@ -27,6 +27,6 @@ describe('Alert Message', () => {
             expect(str).to.equal('I am a JS Confirm')
         })
         cy.on('window:confirm', () => false);
-        cy.get('#result').contains('You clicked: Cancel')
+        cy.get('#result',{timeout:6000}).contains('You clicked: Cancel')
     })
 })
